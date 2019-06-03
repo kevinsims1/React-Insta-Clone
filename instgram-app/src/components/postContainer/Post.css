@@ -1,0 +1,30 @@
+.postContainer {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    width: 62%;
+    margin-left: 150px;
+    padding: 1rem;
+    border: black
+}
+
+.postHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start
+}
+h2{
+    margin-left: 150px;
+}
+
+.thumbNail{
+    outline: black;
+    border-radius: 50%;
+    height: 90px;
+}
+
+.postFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
