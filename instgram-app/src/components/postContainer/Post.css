@@ -4,14 +4,24 @@
     flex-direction: column;
     width: 70%;
     margin-left: 170px;
-    border: black
+    border: 2.5px solid black;
+    margin-top: 1rem
 
+}
+
+.postContainer img {
+    border: 2px solid black;
+}
+
+.postContent {
+    padding-bottom: 1rem;
 }
 
 .postHeader {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding: .5rem
     
 }
 
