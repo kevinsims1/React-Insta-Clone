@@ -1,11 +1,11 @@
 import React from 'react';
-
+import "./searchBar.css"
 
 function SearchBar() {
   return (
     <div className="searchBar">
         <div>
-            <img src="#" className="instaImg"/>
+            <img src="https://image.flaticon.com/icons/svg/1077/1077042.svg" className="instaImg"/>
             <h3>Instagram</h3>
         </div>
         

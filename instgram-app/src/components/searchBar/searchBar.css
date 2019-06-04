@@ -1,0 +1,24 @@
+.instaImg{
+    height: 30px;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+    max-height: 2rem;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%
+}
+
+.searchBar div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchBar div img {
+    padding: .4rem
+}

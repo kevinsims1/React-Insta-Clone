@@ -12,7 +12,7 @@ function PostContainer(props) {
         </div>
         <div className="postContent">
            <img src={props.imageUrl} /><br/>
-           <div class="postFooter">
+           <div className="postFooter">
                <h3>Likes: {props.likes}</h3>
                <h3>{props.timestamp}</h3>
            </div>    

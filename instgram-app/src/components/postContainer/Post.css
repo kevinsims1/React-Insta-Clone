@@ -2,21 +2,27 @@
     display: flex;
     justify-items: center;
     flex-direction: column;
-    width: 62%;
-    margin-left: 150px;
-    padding: 1rem;
+    width: 70%;
+    margin-left: 170px;
     border: black
+
 }
 
 .postHeader {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start
-}
-h2{
-    margin-left: 150px;
+    justify-content: flex-start;
+    
 }
 
+.postHeader img {
+    margin-left: 2.6rem; 
+}
+
+h2{
+    margin-left: 170px;
+}
+ 
 .thumbNail{
     outline: black;
     border-radius: 50%;
@@ -26,5 +32,9 @@ h2{
 .postFooter{
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-left: 2.6rem;
+    padding-right: 2.6rem
+    
+    
 }
