@@ -1,17 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import dummyData from './dummy-data';
 import PostContainer from './components/postContainer/postContainer';
 import SearchBar from "./components/searchBar/searchBar"
-import CommentSection from "./components/commentSection/commentSection"
 
 class App extends React.Component {
   constructor(){
     super()
     this.state= {
-      data: dummyData
+      data: []
     }
+  }
+
+  componentDidMount(){
+    this.setState({
+      data: dummyData
+    })
   }
 
  
