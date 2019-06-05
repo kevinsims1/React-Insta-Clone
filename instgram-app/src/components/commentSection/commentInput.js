@@ -1,50 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React from 'react';
 
+const CommentInput = props => {
+  return (
+    <form onSubmit={props.submitComment}>
+      <input
+        type="text"
+        value={props.comment}
+        placeholder="Add comment... "
+        onChange={props.changeComment}
+      />
+    </form>
+  );
+};
 
-
-export default class CommentSection extends React.Component{
-
-  constructor(){
-    super()
-
-    this.onSubmit = this.onSubmit.bind(this)
-    this.onChange = this.onChange.bind(this)
-    this.state = {newCommentText: ''}
-  }
-
-
-  onSubmit(e){
-    e.preventDefault()
-    this.props.newComment(this.state.newCommentText)
-    this.setState({
-      newCommentText: ''
-    })
-  }
-
-  onChange(e) {
-    const value = e.target.value
-    this.setState({newCommentText: value})
-  }
-
-  render(){
-    return(
-      <div className="Form">
-        <form onSubmit={this.onSubmit}>
-          <input 
-            value={this.state.newCommentText} 
-            onChange={this.onChange}
-            placeholder="Comment Here"
-          />
-        </form>
-      </div>
-      
-    )
-  }
-}
-
-
-CommentSection.propTypes = {
-  newComment: PropTypes.func
-}
-
+export default CommentInput;

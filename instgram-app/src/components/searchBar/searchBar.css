@@ -1,24 +1,24 @@
-.instaImg{
-    height: 30px;
-}
-
-.searchBar {
+.search-bar-wrapper {
+    border-bottom: 1px solid #3333;
+    height: 80px;
+    line-height: 70px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: white;
-    height: 3rem;
-    align-items: center;
-    border: 1px solid black;
-    width: 100%
-}
-
-.searchBar div {
+    justify-content: space-between;
+    background: #ffffff;
+  }
+  
+  .image-wrapper {
+    height: 50px;
+  }
+  
+  .logo-image {
+    height: 100%;
+  }
+  
+  .social-wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.searchBar div img {
-    padding: .4rem
-}
+  }
+  
+  .social {
+    width: 50px;
+  }

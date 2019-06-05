@@ -1,52 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
-import dummyData from './dummy-data';
-import PostContainer from './components/postContainer/postContainer';
-import SearchBar from "./components/searchBar/searchBar"
+import PostsPage from '../src/components/PostContainer/PostsPage';
+import LoginPage from '../src/components/Login/LoginPage';
+import withAuthenticate from '../src/components/Authentication/withAuthenticate';
 
-class App extends React.Component {
-  constructor(){
-    super()
-    this.state= {
-      data: []
-    }
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {};
   }
 
-  componentDidMount(){
-    this.setState({
-      data: dummyData
-    })
-  }
-
- 
-
-  render(){
-  return (
-    <div className="App">
-      <header className="App-header">
-        <SearchBar />
-      </header>
-      <div className="post">    
-          {this.state.data.map(item => (
-            <PostContainer 
-              key={item.id}
-              username={item.username}
-              imageUrl={item.imageUrl}
-              thumbnailUrl={item.thumbnailUrl}
-              likes={item.likes}
-              timestamp={item.timestamp}
-            />
-            ))
-          }
+  render() {
+    return (
+      <div className="App">
+        <ComponentFromWithAuthenticate />
       </div>
-      
-    
-     
-    
-    </div>
-  );
+    );
+  }
 }
 
-}
+const ComponentFromWithAuthenticate = withAuthenticate(PostsPage)(LoginPage);
 
 export default App;
